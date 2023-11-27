@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Irish's Crypto Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button onclick="openLoginModal()">Login</button>
+                <button onclick="openSignupModal()">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Your Portfolio</h2>
+    
+        <div id="portfolio-overview">
+            <p>Total Portfolio Value: $10,000</p>
+            <p>24h Change: +5%</p>
+        </div>
+    
+        <div id="crypto-holdings">
+            <h3>Cryptocurrency Holdings</h3>
+            <ul>
+                <li>Bitcoin (BTC) - Quantity: 1.5 | Current Value: $8,000</li>
+                <li>Ethereum (ETH) - Quantity: 5 | Current Value: $2,000</li>
+                <!-- Add more cryptocurrencies as needed -->
+            </ul>
+        </div>
+    
+        <div id="transaction-history">
+            <h3>Transaction History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Cryptocurrency</th>
+                        <th>Quantity</th>
+                        <th>Total Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-01-01</td>
+                        <td>Buy</td>
+                        <td>Bitcoin (BTC)</td>
+                        <td>1.0</td>
+                        <td>$5,000</td>
+                    </tr>
+                    <tr>
+                        <td>2023-01-05</td>
+                        <td>Sell</td>
+                        <td>Ethereum (ETH)</td>
+                        <td>3.0</td>
+                        <td>$1,200</td>
+                    </tr>
+                    <tr>
+                        <td>2023-01-10</td>
+                        <td>Buy</td>
+                        <td>Litecoin (LTC)</td>
+                        <td>2.5</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>2023-01-15</td>
+                        <td>Sell</td>
+                        <td>Ripple (XRP)</td>
+                        <td>500</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>2023-01-20</td>
+                        <td>Buy</td>
+                        <td>Cardano (ADA)</td>
+                        <td>1000</td>
+                        <td>$150</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Modals for Login and Signup -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="button" onclick="submitLoginForm()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+    
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+    
+                <label for="reenterPassword">Re-enter Password:</label>
+                <input type="password" id="reenterPassword" name="reenterPassword" required>
+    
+                <button type="button" onclick="submitSignupForm()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; Irish's Crypto Portfolio</p>
+    </footer>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

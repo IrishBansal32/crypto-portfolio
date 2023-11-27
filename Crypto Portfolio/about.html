@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Irish's Crypto Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button onclick="openLoginModal()">Login</button>
+                <button onclick="openSignupModal()">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <h1 class="about">ABOUT</h1>
+    </div>
+
+    <div class="responsive-container-block bigContainer">
+        <div class="responsive-container-block Container">
+          <img class="mainImg" src="brilliant-gold-bitcoin-f99bf8ficmah3du3.jpg">
+          <div class="allText aboveText">
+            <p class="text-blk headingText">Our Vision</p>
+            <p class="text-blk subHeadingText">
+              Cryptocurrency
+            </p>
+            <p class="text-blk description">
+                Empowering individuals to confidently explore the world of cryptocurrencies and fostering a future where everyone can navigate this dynamic landscape with knowledge and assurance.
+            </p>
+            <button class="explore" onclick="openSignupModal()">
+              Explore
+            </button>
+          </div>
+        </div>
+        <div class="responsive-container-block Container bottomContainer">
+          <img class="mainImg" src="bull-bitcoin-miami-cryptoart-cryptocurrency-hd-wallpaper-preview.jpg">
+          <div class="allText bottomText">
+            <p class="text-blk headingText">
+              Our Mission
+            </p>
+            <p class="text-blk subHeadingText">
+                At Crypto Portfolio, our mission is to provide a user-centric platform that empowers individuals to manage and understand their cryptocurrency investments effectively.
+            </p>
+            <p class="text-blk description">
+                We strive to deliver comprehensive tools, reliable information, and a supportive community to help users make informed decisions in the dynamic world of digital assets.
+            </p>
+            <button class="explore" onclick="openSignupModal()">
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+     <!-- Modals for Login and Signup -->
+     <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="button" onclick="submitLoginForm()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+    
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+    
+                <label for="reenterPassword">Re-enter Password:</label>
+                <input type="password" id="reenterPassword" name="reenterPassword" required>
+    
+                <button type="button" onclick="submitSignupForm()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; Irish's Crypto Portfolio</p>
+    </footer>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

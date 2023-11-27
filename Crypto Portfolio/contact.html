@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Irish's Crypto Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button onclick="openLoginModal()">Login</button>
+                <button onclick="openSignupModal()">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Jalandhar</div>
+              <div class="text-two">Punjab, IN</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 9041522000</div>
+              <div class="text-two">+91 9041522123</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">irishcryptoportfolio@gmail.com</div>
+              <div class="text-two">irishhsp@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any inquiries about your crypto portfolio, need assistance, or have work opportunities related to our services, don't hesitate to reach out. Feel free to use the form below to send us a message. We look forward to helping you navigate the exciting world of cryptocurrencies!</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+
+    <!-- Modals for Login and Signup -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="button" onclick="submitLoginForm()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignupModal()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="signupUsername">Username:</label>
+                <input type="text" id="signupUsername" name="signupUsername" required>
+    
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+    
+                <label for="reenterPassword">Re-enter Password:</label>
+                <input type="password" id="reenterPassword" name="reenterPassword" required>
+    
+                <button type="button" onclick="submitSignupForm()">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; Irish's Crypto Portfolio</p>
+    </footer>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
